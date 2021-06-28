@@ -68,9 +68,21 @@ const COURSE_LIST = [
 ]
 
 const INSTITUTIONS = function(){
-    let defaultVal = { value: null, label: "All Schools" }
-    let courseMap = COURSE_LIST.map((item)=>{
-        return {value: item.institution, label: item.institution}
+    let defaultVal = { value: null, label: "All Schools" };
+    let courseMap = [];
+
+    COURSE_LIST.forEach((item)=>{
+        if(courseMap.length == 0){
+            courseMap.push({value: item.institution, label: item.institution})
+            return
+        };
+
+        let exists = courseMap.find((c)=>c.value == item.institution);
+
+        if(!exists){
+            courseMap.push({value: item.institution, label: item.institution})
+            return
+        }
     })
 
     courseMap.unshift(defaultVal)
