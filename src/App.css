@@ -6,28 +6,239 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+main {
+    /* overflow: auto;
+    height: 90vh; */
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.right {
+    position: absolute;
+    right: 0;
+}
+.bold {
+    font-weight: bold;
+}
+.caps {
+    text-transform: uppercase;
+}
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #008CFF;
+  min-height: 90px;
+  width:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding-left:40px;
 }
 
+.hamburger {
+    margin-right: 24px !important;
+}
+.nav-menu {
+    width: 300px;
+}
+.nav-menu li {
+    list-style-type: none;
+    font-weight: bold;
+    margin: 48px;
+    font-size: 24px;
+}
+.nav-menu a {
+    color: black;
+}
 .App-link {
-  color: #61dafb;
+  font-size: 16px;
+  font-weight: bold;
 }
 
+.App-link a {
+    color: white;
+}
+
+.apply-button a {
+    color: white;
+}
+
+.sasa-header-logo {
+    margin-right: 20px;
+    color: #FFE500;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.left-links {
+    justify-content: space-between;
+    width:280px;
+}
+
+.right-links {
+    margin-right: 72px;
+    justify-content: space-between;
+    width:140px;
+}
+
+.text-start {
+    text-align: start;
+}
+
+.intro {
+    margin-top: 40px;
+    margin-bottom:72px;
+}
+
+.intro-copy {
+    font-weight: bold;
+    font-size: 24px;
+}
+.into-subcopy {
+    font-size: 16px ;
+}
+.right-intro {
+    height: 100%;
+}
+.button {
+    border: none;
+    background: black;
+    color: white;
+}
+.apply-button {
+    margin-top: 70px;
+    border-radius: 5px;
+    width: 210px;
+    height: 43px;
+}
+.footer {
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.matches-button {
+    width:100%;
+    background-color: black;
+}
+.cert-title {
+    font-weight: bold;
+    color: #008CFF;
+    margin-right: 20px !important;
+}
+.cert-options{
+    /* margin-left: 20px; */
+    align-self: flex-start;
+}
+.inst-title {
+    color: #008CFF;
+    margin-right: 20px;
+}
+.left-table-header {
+    align-items: center;
+}
+.table-divider {
+    width:102%;
+    height: 4px;
+    background-color: #C8C8C8;
+}
+.cert-select {
+    width: 150px;
+}
+.inst-select {
+    width: 180px;
+}
+.course-header {
+    height: 48px;
+    align-items: center;
+}
+.course-result {
+    justify-content: flex-end;
+}
+.course-school {
+    text-align: end;
+}
+.table-content {
+    margin-bottom: 48px;
+}
+.total-points {
+    font-size: 24px;
+    margin-left: 12px;
+    color: #008CFF;
+}
+.course-select {
+    width: 180px;
+}
+.course-item {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 56px;
+    background-color: #EEEEEE;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.course-result-item {
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    margin-bottom: 20px;
+}
+.course-grade {
+    width:100px;
+}
+.course-name {
+    max-width: 350px;
+    padding-right: 20px;
+    text-align: left;
+}
+.courses-list {
+    overflow-y: auto;
+}
+.course-modal {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.inner-modal {
+    background-color: white;
+    width:90%;
+    height: 60%;
+    margin-top: -15%;
+    padding:20px;
+    overflow-y: auto;
+}
+.modal-button {
+    width:90%;
+    height: 48px;
+    padding:20px;
+}
+.subject-name {
+    width:100px;
+}
+.subject-name {
+    width:50px;
+}
+.modal-apply-button {
+    margin-left: 170px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: black;
+    position: relative !important;
+}
+.modal-course-list {
+    margin-top: 20px;
+}
+.modal-course-list p {
+    font-weight: bold;
+}
+.modal-apply-button a {
+    color:white;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
